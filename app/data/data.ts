@@ -4,7 +4,7 @@ export const datas = {
   name: "Steviggio",
   title: "Développeur Fullstack React / Node.js",
   about:
-    "Développeur React / Node.js, passionné de langues et de développement, j'assoc",
+    "Développeur React / Node.js, passionné de langues et de développement, j'aime créer des applications web performantes et accessibles.",
   projects: [
     {
       title: "Polypost",
