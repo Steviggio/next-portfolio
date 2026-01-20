@@ -1,5 +1,5 @@
 import { ThemeToggle } from "@/app/components/theme-toggle";
-import { ArrowUpRight, Github, Linkedin, FileText } from "lucide-react";
+import { ArrowUpRight, FileText } from "lucide-react";
 import { datas as DATA } from "./data/data";
 
 export default function Home() {
@@ -34,10 +34,10 @@ export default function Home() {
             {DATA.projects.map((project, index) => (
               <a
                 key={index}
-                href={project.link}
+                href={`${project.active ? project.link : ""}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group block p-5 border border-sage/20 dark:border-neutral-800 rounded-lg bg-cream-dark/30 dark:bg-neutral-900/50 hover:border-sage hover:bg-white dark:hover:border-sage-light dark:hover:bg-neutral-900 transition-all duration-300"
+                className={`${project.active ? "border-sage" : "border-gray-200 dark:border-0 pointer-events-none  "} group block p-5 border border-sage/20 dark:border-neutral-800 rounded-lg bg-cream-dark/30 dark:bg-neutral-900/50 hover:border-sage hover:bg-white dark:hover:border-sage-light dark:hover:bg-neutral-900 transition-all duration-300 select-none`}
               >
                 <div className="flex justify-between items-start mb-3">
                   <h4 className="font-medium text-sage-dark dark:text-cream group-hover:text-sage transition-colors">
