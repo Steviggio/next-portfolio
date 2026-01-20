@@ -4,28 +4,32 @@ export const datas = {
   name: "Steviggio",
   title: "Développeur Fullstack React / Node.js",
   about:
-    "Développeur React / Node.js, passionné de langues et de développement, j'aime créer des applications web performantes et accessibles.",
+    "Développeur React / Node.js, passionné de langues et de développement, j'aime prendre part à des projets innovants mélant créativité et modernité.",
   projects: [
     {
       title: "Polypost",
       description: "Tableau de bord temps réel avec Next.js 14 et Tremor.",
-      link: "https://github.com",
+      link: "https://github.com/Steviggio/polypost",
+      active: true,
     },
     {
       title: "E-commerce Headless ",
       description:
         "Template E-commerce 'Headless' optimisé pour la performance.",
-      link: "https://github.com",
+      link: "https://github.com/Steviggio/eshop-template",
+      active: true,
     },
     {
-      title: "Open Source CLI",
-      description: "Outil en ligne de commande pour l'automatisation de CI/CD.",
+      title: "Speakio",
+      description: "Plateforme d'accompagnement à l'apprentissage des langues.",
       link: "https://github.com",
+      active: false,
     },
     {
       title: "Portfolio Minimaliste",
       description: "Le site sur lequel vous naviguez actuellement.",
-      link: "https://github.com",
+      link: "https://github.com/Steviggio/next-portfolio",
+      active: true,
     },
   ],
   experiences: [
