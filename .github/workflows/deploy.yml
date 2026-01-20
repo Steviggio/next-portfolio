@@ -15,7 +15,7 @@ jobs:
           key: ${{ secrets.KEY }}
           port: 22
           script: |
-            cd /var/WWw/portfolio
+            cd /var/www/portfolio
             git pull origin main
             npm ci
             npm run build
