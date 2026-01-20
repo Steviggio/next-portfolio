@@ -2,9 +2,9 @@ import { Github, Linkedin } from "./svgs";
 
 export const datas = {
   name: "Steviggio",
-  title: "Développeur Fullstack React / Node.js",
+  title: "Développeur Fullstack JS",
   about:
-    "Développeur React / Node.js, passionné de langues et de développement, j'aime prendre part à des projets innovants mélant créativité et modernité.",
+    "Développeur JavaScript, passionné de langues et de développement, j'aime prendre part à des projets innovants mélant créativité et modernité.",
   projects: [
     {
       title: "Polypost",
