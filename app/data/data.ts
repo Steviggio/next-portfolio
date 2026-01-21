@@ -37,11 +37,13 @@ export const datas = {
       company: "Efficience Digitale",
       role: "Développeur Frontend",
       date: "Sept. 2024 — Oct. 2025",
+      link: "https://efficience.com",
     },
     {
       company: "Ganatan",
       role: "Développeur Fullstack",
       date: "Août 2022 - Sept. 2023",
+      link: "https://ganatan.com",
     },
     {
       company: "Freelance",

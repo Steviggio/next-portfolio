@@ -1,6 +1,7 @@
 import { ThemeToggle } from "@/app/components/theme-toggle";
 import { ArrowUpRight, FileText } from "lucide-react";
 import { datas as DATA } from "./data/data";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -65,9 +66,21 @@ export default function Home() {
                 <span className="absolute -left-[31px] top-1.5 h-3 w-3 rounded-full border-2 border-cream dark:border-neutral-950 bg-sage/40 group-hover:bg-sage transition-colors"></span>
 
                 <div className="flex flex-col sm:flex-row sm:items-baseline justify-between">
-                  <span className="font-medium text-sage-dark dark:text-cream">
-                    {exp.company}
-                  </span>
+                  {exp.link && (
+                    <Link
+                      href={exp.link}
+                      className="hover:text-sage hover:scale-110 hover:ease-in-out hover:duration-150 hover:transition animate-pulse dark:hover:text-cream transition-colors"
+                    >
+                      <span className="font-medium text-sage-dark dark:text-cream">
+                        {exp.company}
+                      </span>
+                    </Link>
+                  )}
+                  {!exp.link && (
+                    <span className="font-medium text-sage-dark dark:text-cream">
+                      {exp.company}
+                    </span>
+                  )}
                   <span className="text-sm font-mono text-sage/70 dark:text-neutral-500">
                     {exp.date}
                   </span>
